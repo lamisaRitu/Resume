@@ -1,0 +1,84 @@
+.text {
+    &--red {
+        color: $red;
+    }
+    &--green {
+        color: $green;
+    }
+    &--bold {
+        font-weight: bold;
+    }
+    &--uppercase {
+        text-transform: uppercase;
+    }
+    &--right {
+        @media screen and (min-width:768px) {
+            text-align: right;
+        }
+    }
+}
+.border-bottom {
+    border-bottom: 8px solid $black;
+}
+.padd_mar {
+    &--large {
+        padding: 0px 15px;
+        @media screen and (min-width:768px) {
+            padding: 0px;
+        }
+    }
+    &--medium {
+        margin: 18px 0px 44px 0px; 
+        @media screen and (min-width:768px) {
+            width: 33.33%;
+            padding: 0px 15px;
+            margin: 18px 0px 26px 0px;
+        }
+    }
+    &--medium-sp {
+        margin: 18px 0px 44px 0px; 
+        @media screen and (min-width:768px) {
+            width: 66.66%;
+            padding: 0px 15px;
+            margin: 18px 0px 26px 0px;
+        }
+    }
+    &--small {
+        margin: 8px 0px; 
+    }
+    &--small-sp {
+        margin-bottom: 60px; 
+        @media screen and (min-width:768px) {
+            margin-bottom: 40px;
+        }
+    }
+}
+.width {
+    &--85 {
+        width: 85%;
+    }
+    &--75 {
+        width: 75%;
+    }
+    &--70 {
+        width: 70%;
+    }
+    &--65 {
+        width: 65%;
+    }
+    &--60 {
+        width: 60%;
+    }
+    &--50 {
+        width: 50%;
+    }
+    &--45 {
+        width: 45%;
+    }
+    &--35 {
+        width: 35%;
+    }
+    &--25 {
+        width: 25%;
+    }
+} 

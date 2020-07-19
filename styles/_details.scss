@@ -1,0 +1,54 @@
+h1 {
+    color: $black;
+    font-size: 56px;
+}
+h2 {
+    font-size: 26px;
+    margin: 2px 0px 10px 0px;
+}
+.header {
+    padding: 5px 25px;
+    text-align: center;
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        text-align: left;
+        .header__avatar-side {
+            background-image: url(../images/meforresume.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 240px;
+            margin-left: auto;
+        }
+    }
+    .header__avatar-up {
+        background-image: url(../images/meforresume.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 240px;
+        margin: 0 auto;
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+    }
+    button {
+        background-color: $white;
+        padding: 8px;
+        margin: 15px 0px 0 0px;
+        border: 0.5px solid $black;
+        border-radius: 5px;
+        &:hover {
+            background-color: $red;
+            color: $aliceblue;
+            transition: 1s;
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    .sec {
+        display: flex;
+    }
+}    
